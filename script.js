@@ -11,34 +11,51 @@ computerplay();
 
 function playRound(playerSelection, computerSelection) {
  
-window.prompt("welcome to a game of rack paper scissors play a round of rock paper sissors")
+window.prompt("welcome to a game of rock paper scissors play a round of rock paper sissors")
 
 
-if(playerSelection === computerSelection)
-{
-  return  "it's a tie";
-} if (playerSelection = "rock", computerSelection = "paper") {
+if(playerSelection == computerSelection){
 
-  return "you lose"
-  
-} else if(playerSelection = "paper", computerSelection = "scissors"){
+  return("its a tie");
+}
 
-  return "you lose"
+else if(player === 'rock') {
+  if (computerChoice === 'paper') {
+      return 'Computer won'
+      
+  } else {
+      return 'Player won'
+      
+  }
+}
 
-
-}else {
-
-  return "player won"
+else if(player === 'paper') {
+  if (computerChoice === 'scissors') {
+      return 'Computer won'
+      
+  } else {
+      return 'Player won'
+      
+  }
 }
 
 
+
+
+
+else if(player === 'scissors') {
+  if (computerChoice === 'rock') {
+      return 'Computer won'
+      
+  } else {
+      return 'Player won'
+      
+  }
+}
 
 }
 
 playRound();
-   
+const playerSelection = ["rock","paper","scissors"]
 const computerSelection = computerplay();
-
-  
-
-    
+console.log(playRound(playerSelection, computerSelection));
