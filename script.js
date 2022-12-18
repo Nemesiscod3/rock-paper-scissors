@@ -1,61 +1,34 @@
 
-function computerplay() {
-    const choices = ["rock", "paper", "scissors"]
-    const ai = choices[Math.floor(Math.random() * choices.length)]
 
-    console.log(ai);
+
+function getComputerChoice() {
+  const choices = ["rock", "paper", "scissors"]
+  const ai = choices[Math.floor(Math.random() * choices.length)]
+
+  
+  return ai
 }
 
-computerplay();
+getComputerChoice();
 
 
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection,computerSelection) {
+
+playerSelection = prompt('welcome to rock paper scissors');
+
+if (playerSelection.toLowerCase() === computerSelection) {
+
+  alert('its a tie');
+  
+}
+
+
+
+}
+
  
-let playerSelection =  prompt('welcome to rock paper scissors')
 
-if(playerSelection == computerSelection){
-
-  return("its a tie");
-}
-
-else if(playerSelection === 'rock') {
-  if (computerSelection === 'paper') {
-      return 'Computer won'
-      
-  } else {
-      return 'Player won'
-      
-  }
-}
-
-else if(playerSelection === 'paper') {
-  if (computerSelection === 'scissors') {
-      return 'Computer won'
-      
-  } else {
-      return 'Player won'
-      
-  }
-}
-
-
-
-
-
-else if(playerSelection === 'scissors') {
-  if (computerSelection === 'rock') {
-      return ('Computer won')
-      
-  } else {
-      return ('Player won')
-      
-  }
-}
-
-}
-
-
-let playerSelection = ["rock","paper","scissors"]
-let computerSelection = computerplay();
+const playerSelection =  "rock";
+const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
