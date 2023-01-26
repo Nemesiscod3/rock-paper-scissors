@@ -44,12 +44,35 @@ if (playerSelection.toLowerCase() === computerSelection) {
 
   alert('you win')
 
+}
 
 }
 
-
-
-
-}
- 
 playRound();
+
+playerSelection =["rock", "paper", "scissors"],
+computerSelection = getComputerChoice()
+let playerscore = 0;
+let computerscore = 0;
+
+for (let i = 0; i < 5; i++) {
+  let playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
+  const computerSelection = getComputerChoice()
+  let roundResult = playRound(playerSelection, computerSelection);
+  console.log(roundResult);
+}
+
+
+function gameScore() {  
+  let roundResult = playRound()
+
+
+  if (playerScore === 5) {
+    console.log(playerWin);
+   
+  }
+  else if (computerScore === 5) {
+    console.log(computerWin);
+    
+  }
+}
