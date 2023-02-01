@@ -55,24 +55,22 @@ computerSelection = getComputerChoice()
 let playerscore = 0;
 let computerscore = 0;
 
-for (let i = 0; i < 5; i++) {
-  let playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
-  const computerSelection = getComputerChoice()
-  let roundResult = playRound(playerSelection, computerSelection);
-  console.log(roundResult);
-}
 
+function scoreboard() {
+  playRound(playerSelection,computerSelection);
+  if (playerscore>computerscore){
+  console.log("Player Won");
+   }
+  if (computerscore>playerscore) {
+  console.log("Computer Win");
+   }
+ }
 
-function gameScore() {  
-  let roundResult = playRound()
-
-
-  if (playerScore === 5) {
-    console.log(playerWin);
-   
+ //to loop the game 5 times//
+ function game() {
+  for (let i=0; i<4; i++) {
+  scoreboard()
+    }
   }
-  else if (computerScore === 5) {
-    console.log(computerWin);
-    
-  }
-}
+
+  game();
