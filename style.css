@@ -1,0 +1,168 @@
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+  #container{
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+   
+  }
+
+
+body{
+
+background-color: black;
+margin: 0px;
+font-family: 'Orbitron', Verdana, sans-serif;
+color: white;
+text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px rgb(21, 113, 218);
+
+
+}
+
+#game-title{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    white-space: nowrap;
+    gap: 15px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+
+.text-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft
+}
+
+.button-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+    font-family: 'Orbitron', Verdana, sans-serif;
+
+}
+
+
+#container{
+
+    border: 8px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 700px;
+    margin-top: 50px;
+    display:block;
+    
+    
+}
+
+
+div {
+  margin: 0 auto;
+  padding: 10px;
+  width: 120px;
+}
+
+#winner-decider{
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    color: white;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+#restart-button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+#player-count{
+
+    white-space: nowrap;
+}
+#computer-count{
+
+    white-space: nowrap;
+}
+button{
+
+    color: white;
+    background-color: black;
+    padding: 15px 32px;
+    border-style: ridge;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px rgb(21, 113, 218);
+
+
+}
+
+button#ROCK:hover{
+
+
+    border-color: blue;
+}
+
+button#PAPER:hover{
+
+
+    border-color: green;
+}
+
+button#SCISSORS:hover{
+
+
+    border-color: red;
+}
+
+button#btn1:hover{
+
+
+    border-color: aqua;
+}

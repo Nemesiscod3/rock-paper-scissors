@@ -14,15 +14,32 @@
 
 <body>
 
+
+  <div>
+    <h1 id="game-title"> Rock, Paper, Scissors</h1>
+  </div>
+
     <div id="container">
 
+        <div class="text-container">
         <h1 id="computer-selection">computer:</h1>
         <h1 id="plays-selection">player:</h1>
         <h1 id="result">result:</h1>
+          </div>
+        <div id="winner-decider">
+         
+          <h1 id="computer-count">computer score:</h1>
+          <h1 id="player-count">player score:</h1>
 
-        <button id="ROCK">Rock</button>
+        </div>
+      <div class="button-container">
+        <button id="ROCK">rock</button>
         <button id="PAPER">paper</button>
         <button id="SCISSORS">scissors</button>
+      </div>
+      <div id="restart-button" >  
+        <button id="btn1" onClick="window.location.reload();">Play Again?</button>
+      </div>
 
     </div>
 
